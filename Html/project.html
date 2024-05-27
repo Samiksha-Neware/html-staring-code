@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 99vw;
+            margin-left: 10px;
+            height: 650px;
+            border: 5px solid black;
+            background-color: #D37676;
+        }
+        .nav{
+            border: 2px solid black;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #B0C5A4;
+            color: black ;
+        }
+        .main{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        a{
+            font-size: 20px;
+        }
+        .s1:hover{
+            color: blue;
+        }
+        button{
+            width: 50px;
+            background-color: white;
+            color: rgb(217, 68, 23);
+        }
+        p{
+            font-size: 30px;
+            color:black;
+        }
+        .box-1{
+            display: grid;
+            align-items: center;
+            text-align: center;
+            border: 2px solid rgb(119, 11, 11);
+            width: 400px;
+            height:480px;
+            justify-content: space-evenly;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            border: 1px solid purple;
+            background-color: brown;
+        }
+        .box-2{
+            display: grid;
+            grid-gap:20px;
+            border: 2px solid rgb(119, 11, 11);
+            width:400px;
+            height: 480px;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .box-3{
+            display: grid;
+            border: 2px solid rgb(119, 11, 11);
+            width: 400px;
+            height: 480px;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .sec{
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            border: 1px solid black;
+            display: grid;
+            align-items: center;
+        }
+        .x, .y, .z{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            border-radius: 10px;
+            align-items: center;
+            margin-top: 10px;
+            display: grid;
+        }
+        .item{
+            position: relative;
+            right: 120px;
+            bottom: 165px;
+            display: grid;
+            align-items: center;            
+        }
+        .c{
+            position: relative;
+            left: 120px;
+            bottom: 160px;
+        }
+        h2{
+            text-align: center;
+            position: relative;
+            top: 40px;
+        }
+        .main2{
+            width: 98vw;
+            margin: 10px;
+            justify-content: space-around;
+        }
+        .page1, .page2, .page3{
+            float: left;
+            width: 30%;
+            margin: 0 1%; 
+            height: 400px;
+            border: 2px solid indianred;;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .k1, .k2, .k3{
+        display: grid;
+        width: 100px;
+        height: 100px;
+        border: 2px solid pink;
+        border-radius: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .l1{
+        width: 100px;
+        height: 100px;
+        display: grid;
+        align-items: center;
+        text-align: center;
+        background-color:  #5E1675;
+        border:2px solid pink;
+        border-radius: 10px;
+    }
+    .l2{
+        width: 100px;
+        height: 100px;
+        display: grid;
+        align-items: center;
+        text-align: center;
+        background-color: #EE4266;
+        border:2px solid pink;
+        border-radius: 10px;
+        position: relative;;
+        top:  50px;
+        bottom: 60px;
+        left: 30px;
+    }
+    .l3{
+    border:2px solid pink;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    width: 100px;
+    height: 100px;
+    background-color:#FFD23F;
+}
+.m1{
+    border:2px solid pink;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    display: grid;
+    align-items: center;
+    background-color:  #5E1675;
+    margin-top: 20px;
+}
+.m2{
+    border:2px solid pink;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    display: grid;
+    align-items: center;
+    background-color:  #EE4266;
+    margin-top: 20px;
+}
+
+.m3{
+    border:2px solid pink;
+    border-radius: 10px;
+    bottom: 111px; 
+    position: relative;
+    right: 100px;
+    width: 100px;
+    height: 100px;
+    background-color:#FFD23F;
+}
+
+.page4{
+    align-items: center;
+    display: grid;
+    margin-left: 500px;
+    margin-top: 20px;
+    border: 2px solid indianred;
+    overflow:auto;
+    width: 400px;
+    height: 400px;
+    margin-top: 0;
+    position: relative;
+    top: 10px;
+}
+.f1{
+    position: sticky;
+    bottom:90px;
+    left:100px;
+    border:1px solid indianred;
+    background-color:#5E1675;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    text-align: center;  
+}
+.lorem{
+    background-color: white;
+    justify-content: center;
+    height: 700px;
+}
+.page5{
+    border: 10px solid white;
+    justify-content: space-around;
+    background-color:#B7E5B4;
+    height: 1575px;
+    position: relative;
+    top: 30px;
+}
+h3{
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+}
+.table{
+    display: grid;
+    position: relative;
+    left: 700px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #F28585;
+    margin: 10px ;
+    align-items: center;
+    text-align: center;
+}
+hr{
+    border-color: #008170;
+}
+.key1{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-gap:15px;
+    grid-template-rows: repeat(3,1fr);
+    width: 1500px;
+    height: 500px;
+    margin-top: 10px;
+}
+.key{
+    background-color: #F28585;
+    margin: 10px ;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 2px;
+    border: 2px solid black;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    
+}
+.ki{
+    position: relative;
+    left: 1203px;
+}
+.key2,.key3{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-gap:15px;
+    grid-template-rows: repeat(3,1fr);
+    width: 1500px;
+    height: 500px;
+    margin-top: 10px;
+}
+.keys{
+    background-color: #F28585;
+    margin: 10px ;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 2px;
+    border: 2px solid black;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    
+}
+.keyz{
+    background-color: #F28585;
+    margin: 10px ;
+    width: 990px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 2px;
+    border: 2px solid black;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+.but{
+    background-color: #F28585;
+    margin: 10px ;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 2px;
+    border: 2px solid black;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    bottom: 370px;
+    
+}
+.sami{
+    position: relative;
+    bottom: 380px;
+}
+.but2{
+    background-color: #F28585;
+    margin: 10px ;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 2px;
+    border: 2px solid black;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 200px;
+    bottom: 370px;
+    
+}
+.but3{
+    background-color: #F28585;
+    margin: 10px ;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 2px;
+    border: 2px solid black;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 400px;
+    bottom: 370px;
+    
+}
+.but4{
+    background-color: #F28585;
+    margin: 10px ;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 2px;
+    border: 2px solid black;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 600px;
+    bottom: 370px;
+    
+}
+.but5{
+    background-color: #F28585;
+    margin: 10px ;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 2px;
+    border: 2px solid black;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 750px;
+    bottom: 370px;
+    
+}
+.but6{
+    background: #F28585;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 2px;
+    border: 2px solid black;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    bottom: 200px;
+    right: 50px;
+}
+.icon{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #5E1675;
+    align-items: center;
+    font-size: 30px;
+    border: 1px;
+    position: relative;
+    bottom: 530px;
+}
+.Arrow{
+    background-color: red;
+    border: 20px solid red;
+    position: relative;
+    left: 1460px;
+    top: 1900px;
+    border-radius: 30px 5px 5px 30px;
+}
+.n{
+    margin: 5px;
+}
+.n:hover{
+    color: #F28585;
+}
+
+button:hover{
+    background-color:green ;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment of Html & Css</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <div class="container">
+            <div class="nav">
+                <p>Flex, Float & Position</p>
+                <a  class="s1">Home</a>
+                <a class="s1">About</a>
+                <a class="s1">Service</a>
+                <button>Signup</button>
+                <button>Login</button>
+            </div>
+            <p style="text-align: center; color: white; margin-top: 10px; margin-left: 100px;">POSITIONING ELEMENTS USING FLOATS</p>
+            <div class="main">
+                <div class="box-1">
+                    <div class="box" style="background-color: #EBC49F;">sec-1</div>
+                    <div class="box" style="background-color: #F1EF99;">sec-2</div>
+                    <div class="box" style="background-color: #CDFADB;">sec-2</div>
+                </div>
+                <div class="box-2">
+                    <div class="x" style="background-color: #EBC49F;">sec-1</div>
+                    <div class="y" style="background-color: #F1EF99;">sec-2</div>
+                    <div class="item z" style="background-color: #CDFADB;">sec-3</div>
+                </div>
+                <div class="box-3">
+                    <div class="sec" style="background-color: #EBC49F;">sec-1</div>
+                    <div class="sec" style="background-color: #F1EF99;">sec-2</div>
+                    <div class="sec c" style="background-color: #CDFADB">sec-3</div>
+                </div>
+            </div><br><br><br>
+            <h2>UNIQUILY POSITIONING CONTENT</h2>
+            <div class="main2">
+                <div class="page1">
+                    <div class="k1" style="background-color: #5E1675">section1</div>
+                    <div class="k2" style="background-color: #EE4266;">section2</div>
+                    <div class="k3" style="background-color: #FFD23F;">section3</div>
+                </div>
+                <div class="page2">
+                    <div class="l1">section1</div>
+                    <div class="l2">section2</div>
+                    <div class="l3">section3</div>
+                </div>
+                <div class="page3">
+                    <div class="pg m1">setion1</div>
+                    <div class="pg m2">section2</div>
+                    <div class="pg m3">section3</div>
+                </div>
+                <div class="page4">
+                    <div class="lorem">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, mollitia? Cum consectetur numquam commodi, consequuntur non ut culpa magnam laudantium iste excepturi cumque officia explicabo nobis deserunt beatae doloremque quis voluptates itaque reprehenderit asperiores amet. Ratione animi ex aliquid, iste nesciunt deleniti obcaecati, atque nam sunt veritatis numquam? Distinctio non et fugiat ut eos dolor ab culpa eveniet ea blanditiis necessitatibus, repellat accusamus nobis explicabo, nesciunt dolore odit. Cum velit architecto at quibusdam alias ab accusantium est quis et corporis? Inventore ab perspiciatis atque blanditiis ipsum, veritatis vitae optio nam eaque. Illum id alias labore hic soluta qui, quidem dolores voluptatum. Iure molestiae eum consequuntur nostrum dignissimos. Consequuntur dolor magni ipsum ex laboriosam, modi ut distinctio recusandae deleniti odit repellat asperiores nulla amet commodi earum, quas placeat totam delectus ad mollitia tempore? Facilis minima magni, necessitatibus aut iste excepturi quam suscipit ipsum sunt laborum perferendis dicta. Magni fugit, deserunt natus consequuntur iure atque exercitationem asperiores eum dolorum reprehenderit debitis tenetur accusantium cupiditate corporis ad sapiente iusto. Quas tempore laboriosam nesciunt suscipit temporibus ducimus accusamus inventore! Esse cumque, laborum voluptatem ea eius neque quas ad soluta consequuntur delectus. Cupiditate nulla, ratione sint suscipit, architecto quibusdam illum dicta quo praesentium ex libero illo veritatis rem ut hic? Officiis nesciunt impedit deserunt temporibus dolores ullam, voluptate et dolore! Voluptate quo aspernatur nam, dignissimos assumenda aliquam architecto possimus quas perferendis quisquam deleniti soluta libero! Repudiandae doloremque fugit cum sapiente reprehenderit? Quas saepe excepturi expedita eveniet voluptatem? Facilis odio dignissimos harum, ea deleniti accusamus blanditiis nemo sunt incidunt eum nam maxime at quis, hic ipsam tenetur natus vero vel ipsum unde, sit voluptas. Dolorem molestias assumenda dolore. Reprehenderit deserunt deleniti accusantium cupiditate voluptatum, dignissimos cumque rem? Necessitatibus natus eveniet suscipit consequatur. Doloribus in quod qui, iste, odio sequi accusamus dolor illo eveniet suscipit eligendi architecto?</p>
+                        <div class="f1">Section1</div>
+                    </div>
+                </div>
+                <div class="page5">
+                    <h3>Positioning with flex</h3>
+                    <div class="table">item1</div>
+                    <div class="table">item2</div>
+                    <div class="table">item3</div>
+                    <div class="table">item4</div><hr>
+                  
+                <div class="key1">
+                    <div class="key">key1</div>
+                    <div class="key">key2</div>
+                    <div class="key">key3</div>
+                    <div class="key">key4</div>
+                    <div class="key">key5</div>
+                    <div class="key">key6</div>
+                    <div class="key">key7</div>
+                    <div class="key">key8</div>
+                    <div class="key">key9</div>
+                    <div class="key">key10</div>
+                    <div class="key">key11</div>
+                    <div class="key">key12</div>
+                    <div class="key">key13</div>
+                    <div class="key">key14</div>
+                    <div class="key">key15</div>
+                    <div class="key">key16</div>
+                    <div class="key">key17</div>
+                    <div class="key">key18</div>
+                    <div class="key">key19</div>
+                    <div class="key">key20</div>
+                    <div class="key">key21</div>
+                    <div class="key ki">key22</div>
+                </div>
+                <hr>
+                <div class="key2">
+                    <div class="keys">key1</div>
+                    <div class="keys">key2</div>
+                    <div class="keyz">key3</div>
+                    <div class="keys">key4</div>
+                    <div class="keys">key5</div>
+                </div>
+                <hr class="sami">
+                <div class="key3">
+                    <div class="but">key1</div>
+                    <div class="but2">key2</div>
+                    <div class="but3">key3</div>
+                    <div class="but4">key4</div>
+                    <div class="but5">key5</div>
+                    <div class="but6">key6</div>
+                </div>
+                <div class="icon v">
+                    <i class="fa-brands fa-instagram n"></i>
+                    <i class="fa-brands fa-whatsapp n"></i>
+                    <i class="fa-brands fa-facebook n"></i>
+                    <i class="fa-brands fa-twitter n"></i>
+                    <i class="fa-solid fa-download n"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="http://127.0.0.1:5500/my.html"><i class="fa-solid fa-arrow-up Arrow"></i></a>
+</body>
+</html>

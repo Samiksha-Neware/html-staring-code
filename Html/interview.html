@@ -1,0 +1,72 @@
+d<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Circle in HTML</title>
+<style>
+  .circle {
+    width: 100px; /* Diameter of the circle */
+    height: 100px; /* Diameter of the circle */
+    border-radius: 50%; 
+    background-color: blue; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+ 
+  .container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+
+  .element1 {
+    position: absolute;
+    z-index: 5;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+
+  .element2 {
+    position: absolute;
+    z-index: 10;
+    top: 40px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+  }
+
+</style>
+</head>
+<body>
+
+  <!--circle-->
+<div class="circle">Circle</div>
+<hr>
+<!--z-index-->
+<div class="container">
+  <div class="element1">Element 1</div>
+  <div class="element2">Element 2</div>
+</div>
+<hr>
+
+</body>
+</html>
+
+</body>
+</html>
